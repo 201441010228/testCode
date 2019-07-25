@@ -30,13 +30,13 @@ public class DesUtil {
 	 */
 	public static String encrypt(String data, String key) throws Exception {
 		
-		if(StringUtils.isEmpty(data)){
-			throw new Exception("加密字符串为空");
-		}
-		
-		if(StringUtils.isEmpty(key)){
-			throw new Exception("密钥为空");
-		}
+//		if(StringUtils.isEmpty(data)){
+//			throw new Exception("加密字符串为空");
+//		}
+//
+//		if(StringUtils.isEmpty(key)){
+//			throw new Exception("密钥为空");
+//		}
 		
 		if(key.length()!= 8){
 			throw new Exception("密钥长度必须为8位");
@@ -59,13 +59,13 @@ public class DesUtil {
 	public static String decrypt(String data, String key) throws IOException,
 			Exception {
 		
-		if(StringUtils.isEmpty(data)){
-			throw new Exception("解密字符串为空");
-		}
-		
-		if(StringUtils.isEmpty(key)){
-			throw new Exception("密钥为空");
-		}
+//		if(StringUtils.isEmpty(data)){
+//			throw new Exception("解密字符串为空");
+//		}
+//
+//		if(StringUtils.isEmpty(key)){
+//			throw new Exception("密钥为空");
+//		}
 		
 		if(key.length()!= 8){
 			throw new Exception("密钥长度必须为8位");

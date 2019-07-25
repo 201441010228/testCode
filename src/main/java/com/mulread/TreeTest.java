@@ -1,12 +1,7 @@
 package com.mulread;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
-import org.apache.poi.ss.formula.functions.T;
-import sun.reflect.generics.tree.Tree;
 
 /**
  * @Auther: 张扬
@@ -15,10 +10,15 @@ import sun.reflect.generics.tree.Tree;
  */
 public class TreeTest<T1, T2> {
 
+    private  static  Integer num = 1;
+    private static Map<String,Integer> map = new HashMap<>();
+    static {
+        map.put("num",num);
+    }
     public static void main(String args[]) {
-        System.out.println(new TreeTest().getT1());
-        System.out.println(new TreeTest().getT2());
-        new TreeTest<String,String>().getClassName(1);
+      Integer num = map.get("num");
+      num =2;
+        System.out.println(map.get("num"));
 
     }
 

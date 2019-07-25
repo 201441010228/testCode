@@ -22,7 +22,7 @@ public class Producer {
              while(count<100){
                  Thread.sleep(1000);
                  Message msg = new Message("topic-test","tag-test",(new Date() + "Hello RQ "+count).getBytes());
-                SendResult sendResult =  defaultMQProducer.send(msg);
+                 SendResult sendResult =  defaultMQProducer.send(msg);
              }
          }catch (Exception e){
              e.printStackTrace();
